@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'AplhaVantageSwift'
   s.version          = '0.1.0'
   s.summary          = 'Swift wrappers for the famous Alpha Vantage API'
-  s.platforms        = { :ios => 9.0, :osx => 10.9 }
+  s.platforms        = { :ios => 9.0, :osx => 10.10 }
   s.swift_version    = '4.1'
 
 # This description is used to generate tags and improve search results.
@@ -20,17 +20,18 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Here is a all in one swift wrapper for the famous trading api called Alpha Vantage
                        DESC
 
-  s.homepage         = 'https://github.com/Sourav Chandra/AplhaVantageSwift'
+  s.homepage         = 'https://github.com/pyza-labs/AlphaVantageSwift'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Sourav Chandra' => 'saurav.chandra1992@live.com' }
-  s.source           = { :git => 'https://github.com/Sourav Chandra/AplhaVantageSwift.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/pyza-labs/AlphaVantageSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.10'
 
   s.source_files = 'AplhaVantageSwift/Classes/**/*'
   
