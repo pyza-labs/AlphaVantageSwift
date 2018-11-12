@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D801F45CE0921839D7C0B7F /* Pods_AplhaVantageSwift_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D71D1642CECBE6A7C4FD0708 /* Pods_AplhaVantageSwift_iOS.framework */; };
+		4E57E16A20EBA566AC4E5DB2 /* Pods_AlphaVantageSwift_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD70DCB41DA6A093261CCA1 /* Pods_AlphaVantageSwift_macOS.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		7DB17D652199FE79006AADFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB17D642199FE79006AADFD /* AppDelegate.swift */; };
+		7DB17D672199FE79006AADFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB17D662199FE79006AADFD /* ViewController.swift */; };
+		7DB17D692199FE79006AADFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DB17D682199FE79006AADFD /* Assets.xcassets */; };
+		7DB17D6C2199FE79006AADFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DB17D6A2199FE79006AADFD /* Main.storyboard */; };
 		9FD603BB826603362B1D412D /* Pods_AplhaVantageSwift_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 381910242E1A82D4A9EF1ED6 /* Pods_AplhaVantageSwift_Example.framework */; };
 		D3E2C6682C0E4F80990FFAFE /* Pods_AplhaVantageSwift_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E6C0153A733227132A004C /* Pods_AplhaVantageSwift_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -28,12 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1126E9FF17ED63DE49A245C5 /* Pods-AplhaVantageSwift-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplhaVantageSwift-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AplhaVantageSwift-iOS/Pods-AplhaVantageSwift-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		1A3F22773C4CB5AAE7B80067 /* Pods-AplhaVantageSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplhaVantageSwift_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AplhaVantageSwift_Example/Pods-AplhaVantageSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		240389A04FBF21CD179E7621 /* Pods-AplhaVantageSwift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplhaVantageSwift_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AplhaVantageSwift_Example/Pods-AplhaVantageSwift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		381910242E1A82D4A9EF1ED6 /* Pods_AplhaVantageSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AplhaVantageSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		528BF2D4CB9E70E4D19991A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		53B0A1773DECC870C61FD369 /* AplhaVantageSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AplhaVantageSwift.podspec; path = ../AplhaVantageSwift.podspec; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* AplhaVantageSwift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AplhaVantageSwift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43363CC0C17742F833636DF0 /* Pods-AlphaVantageSwift-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaVantageSwift-macOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlphaVantageSwift-macOS/Pods-AlphaVantageSwift-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		4DE91363D6CB0EF9665B91FC /* Pods-AplhaVantageSwift-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplhaVantageSwift-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AplhaVantageSwift-iOS/Pods-AplhaVantageSwift-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		528BF2D4CB9E70E4D19991A5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		53B0A1773DECC870C61FD369 /* AplhaVantageSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AplhaVantageSwift.podspec; path = ../AplhaVantageSwift.podspec; sourceTree = "<group>"; };
+		5920405BC36DEEA7B60761F5 /* Pods-AlphaVantageSwift-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlphaVantageSwift-macOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlphaVantageSwift-macOS/Pods-AlphaVantageSwift-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+		607FACD01AFB9204008FA782 /* AplhaVantageSwift-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AplhaVantageSwift-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,9 +54,18 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		76E6C0153A733227132A004C /* Pods_AplhaVantageSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AplhaVantageSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB17D622199FE79006AADFD /* AlphaVantageSwift-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AlphaVantageSwift-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DB17D642199FE79006AADFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DB17D662199FE79006AADFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DB17D682199FE79006AADFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DB17D6B2199FE79006AADFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DB17D6D2199FE79006AADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DB17D6E2199FE79006AADFD /* AlphaVantageSwift_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlphaVantageSwift_macOS.entitlements; sourceTree = "<group>"; };
+		8AD70DCB41DA6A093261CCA1 /* Pods_AlphaVantageSwift_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaVantageSwift_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC8508799405BB6386F2318 /* Pods-AplhaVantageSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplhaVantageSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AplhaVantageSwift_Tests/Pods-AplhaVantageSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A854AFC41E889F86DA21BF3E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A854AFC41E889F86DA21BF3E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BEA31FF4DB3EC41C1056D6C0 /* Pods-AplhaVantageSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplhaVantageSwift_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AplhaVantageSwift_Tests/Pods-AplhaVantageSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D71D1642CECBE6A7C4FD0708 /* Pods_AplhaVantageSwift_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AplhaVantageSwift_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FD603BB826603362B1D412D /* Pods_AplhaVantageSwift_Example.framework in Frameworks */,
+				3D801F45CE0921839D7C0B7F /* Pods_AplhaVantageSwift_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +83,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3E2C6682C0E4F80990FFAFE /* Pods_AplhaVantageSwift_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7DB17D5F2199FE79006AADFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E57E16A20EBA566AC4E5DB2 /* Pods_AlphaVantageSwift_macOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +103,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for AplhaVantageSwift */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				7DB17D632199FE79006AADFD /* AlphaVantageSwift-macOS */,
 				607FACD11AFB9204008FA782 /* Products */,
 				BDF30A1B52D6D9863901C22A /* Pods */,
 				A1893C42D716F3AF8704B6B5 /* Frameworks */,
@@ -84,8 +113,9 @@
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* AplhaVantageSwift_Example.app */,
+				607FACD01AFB9204008FA782 /* AplhaVantageSwift-iOS.app */,
 				607FACE51AFB9204008FA782 /* AplhaVantageSwift_Tests.xctest */,
+				7DB17D622199FE79006AADFD /* AlphaVantageSwift-macOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,11 +169,26 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		7DB17D632199FE79006AADFD /* AlphaVantageSwift-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				7DB17D642199FE79006AADFD /* AppDelegate.swift */,
+				7DB17D662199FE79006AADFD /* ViewController.swift */,
+				7DB17D682199FE79006AADFD /* Assets.xcassets */,
+				7DB17D6A2199FE79006AADFD /* Main.storyboard */,
+				7DB17D6D2199FE79006AADFD /* Info.plist */,
+				7DB17D6E2199FE79006AADFD /* AlphaVantageSwift_macOS.entitlements */,
+			);
+			path = "AlphaVantageSwift-macOS";
+			sourceTree = "<group>";
+		};
 		A1893C42D716F3AF8704B6B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				381910242E1A82D4A9EF1ED6 /* Pods_AplhaVantageSwift_Example.framework */,
 				76E6C0153A733227132A004C /* Pods_AplhaVantageSwift_Tests.framework */,
+				8AD70DCB41DA6A093261CCA1 /* Pods_AlphaVantageSwift_macOS.framework */,
+				D71D1642CECBE6A7C4FD0708 /* Pods_AplhaVantageSwift_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -155,6 +200,10 @@
 				1A3F22773C4CB5AAE7B80067 /* Pods-AplhaVantageSwift_Example.release.xcconfig */,
 				BEA31FF4DB3EC41C1056D6C0 /* Pods-AplhaVantageSwift_Tests.debug.xcconfig */,
 				8EC8508799405BB6386F2318 /* Pods-AplhaVantageSwift_Tests.release.xcconfig */,
+				5920405BC36DEEA7B60761F5 /* Pods-AlphaVantageSwift-macOS.debug.xcconfig */,
+				43363CC0C17742F833636DF0 /* Pods-AlphaVantageSwift-macOS.release.xcconfig */,
+				4DE91363D6CB0EF9665B91FC /* Pods-AplhaVantageSwift-iOS.debug.xcconfig */,
+				1126E9FF17ED63DE49A245C5 /* Pods-AplhaVantageSwift-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -162,9 +211,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* AplhaVantageSwift_Example */ = {
+		607FACCF1AFB9204008FA782 /* AplhaVantageSwift-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AplhaVantageSwift_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AplhaVantageSwift-iOS" */;
 			buildPhases = (
 				CDE67CFD87ECCA466F2988F0 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -176,9 +225,9 @@
 			);
 			dependencies = (
 			);
-			name = AplhaVantageSwift_Example;
+			name = "AplhaVantageSwift-iOS";
 			productName = AplhaVantageSwift;
-			productReference = 607FACD01AFB9204008FA782 /* AplhaVantageSwift_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* AplhaVantageSwift-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		607FACE41AFB9204008FA782 /* AplhaVantageSwift_Tests */ = {
@@ -201,24 +250,49 @@
 			productReference = 607FACE51AFB9204008FA782 /* AplhaVantageSwift_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		7DB17D612199FE79006AADFD /* AlphaVantageSwift-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DB17D712199FE79006AADFD /* Build configuration list for PBXNativeTarget "AlphaVantageSwift-macOS" */;
+			buildPhases = (
+				9081A0B6EAB49E288EBD15F4 /* [CP] Check Pods Manifest.lock */,
+				7DB17D5E2199FE79006AADFD /* Sources */,
+				7DB17D5F2199FE79006AADFD /* Frameworks */,
+				7DB17D602199FE79006AADFD /* Resources */,
+				4318B5A9E01C3CA4A816B560 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlphaVantageSwift-macOS";
+			productName = "AlphaVantageSwift-macOS";
+			productReference = 7DB17D622199FE79006AADFD /* AlphaVantageSwift-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = EC3AZW8X4Z;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					7DB17D612199FE79006AADFD = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = EC3AZW8X4Z;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -235,8 +309,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* AplhaVantageSwift_Example */,
+				607FACCF1AFB9204008FA782 /* AplhaVantageSwift-iOS */,
 				607FACE41AFB9204008FA782 /* AplhaVantageSwift_Tests */,
+				7DB17D612199FE79006AADFD /* AlphaVantageSwift-macOS */,
 			);
 		};
 /* End PBXProject section */
@@ -259,6 +334,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7DB17D602199FE79006AADFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB17D692199FE79006AADFD /* Assets.xcassets in Resources */,
+				7DB17D6C2199FE79006AADFD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -270,8 +354,8 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-AplhaVantageSwift_Example/Pods-AplhaVantageSwift_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AplhaVantageSwift/AplhaVantageSwift.framework",
+				"${SRCROOT}/Pods/Target Support Files/Pods-AplhaVantageSwift-iOS/Pods-AplhaVantageSwift-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AplhaVantageSwift-iOS/AplhaVantageSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -281,7 +365,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AplhaVantageSwift_Example/Pods-AplhaVantageSwift_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AplhaVantageSwift-iOS/Pods-AplhaVantageSwift-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4318B5A9E01C3CA4A816B560 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AlphaVantageSwift-macOS/Pods-AlphaVantageSwift-macOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AplhaVantageSwift-macOS/AplhaVantageSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AplhaVantageSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlphaVantageSwift-macOS/Pods-AlphaVantageSwift-macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9081A0B6EAB49E288EBD15F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlphaVantageSwift-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		CDE67CFD87ECCA466F2988F0 /* [CP] Check Pods Manifest.lock */ = {
@@ -299,7 +427,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AplhaVantageSwift_Example-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-AplhaVantageSwift-iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -372,12 +500,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7DB17D5E2199FE79006AADFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DB17D672199FE79006AADFD /* ViewController.swift in Sources */,
+				7DB17D652199FE79006AADFD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* AplhaVantageSwift_Example */;
+			target = 607FACCF1AFB9204008FA782 /* AplhaVantageSwift-iOS */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -399,6 +536,14 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		7DB17D6A2199FE79006AADFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7DB17D6B2199FE79006AADFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -414,12 +559,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -467,12 +614,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -503,9 +652,10 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 240389A04FBF21CD179E7621 /* Pods-AplhaVantageSwift_Example.debug.xcconfig */;
+			baseConfigurationReference = 4DE91363D6CB0EF9665B91FC /* Pods-AplhaVantageSwift-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EC3AZW8X4Z;
 				INFOPLIST_FILE = AplhaVantageSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -518,9 +668,10 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A3F22773C4CB5AAE7B80067 /* Pods-AplhaVantageSwift_Example.release.xcconfig */;
+			baseConfigurationReference = 1126E9FF17ED63DE49A245C5 /* Pods-AplhaVantageSwift-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EC3AZW8X4Z;
 				INFOPLIST_FILE = AplhaVantageSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -571,6 +722,69 @@
 			};
 			name = Release;
 		};
+		7DB17D6F2199FE79006AADFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5920405BC36DEEA7B60761F5 /* Pods-AlphaVantageSwift-macOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "AlphaVantageSwift-macOS/AlphaVantageSwift_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = EC3AZW8X4Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "AlphaVantageSwift-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pyzalabs.AlphaVantageSwift-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		7DB17D702199FE79006AADFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43363CC0C17742F833636DF0 /* Pods-AlphaVantageSwift-macOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "AlphaVantageSwift-macOS/AlphaVantageSwift_macOS.entitlements";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = EC3AZW8X4Z;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "AlphaVantageSwift-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pyzalabs.AlphaVantageSwift-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -583,7 +797,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AplhaVantageSwift_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "AplhaVantageSwift-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,
@@ -597,6 +811,15 @@
 			buildConfigurations = (
 				607FACF31AFB9204008FA782 /* Debug */,
 				607FACF41AFB9204008FA782 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DB17D712199FE79006AADFD /* Build configuration list for PBXNativeTarget "AlphaVantageSwift-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DB17D6F2199FE79006AADFD /* Debug */,
+				7DB17D702199FE79006AADFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

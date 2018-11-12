@@ -1,12 +1,25 @@
 use_frameworks!
+inhibit_all_warnings!
 
-target 'AplhaVantageSwift_Example' do
-  pod 'AplhaVantageSwift', :path => '../'
+def development_pods
+    pod 'AplhaVantageSwift', :path => '../'
+end
 
-  target 'AplhaVantageSwift_Tests' do
-    inherit! :search_paths
+target 'AplhaVantageSwift-iOS' do
+    platform :ios, 9.0
 
-    pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0.2'
-  end
+    development_pods
+
+    target 'AplhaVantageSwift_Tests' do
+        inherit! :search_paths
+
+        pod 'Quick', '~> 1.2.0'
+        pod 'Nimble', '~> 7.0.2'
+    end
+end
+
+target 'AlphaVantageSwift-macOS' do
+    platform :osx, 10.9
+
+    development_pods
 end
