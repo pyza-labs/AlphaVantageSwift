@@ -45,6 +45,7 @@
 		7DB17D6B2199FE79006AADFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DB17D6D2199FE79006AADFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DB17D6E2199FE79006AADFD /* AlphaVantageSwift_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AlphaVantageSwift_macOS.entitlements; sourceTree = "<group>"; };
+		7DB17DAC219A2ECB006AADFD /* AlphaVantageSwift-macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AlphaVantageSwift-macOS.entitlements"; sourceTree = "<group>"; };
 		8AD70DCB41DA6A093261CCA1 /* Pods_AlphaVantageSwift_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlphaVantageSwift_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EC8508799405BB6386F2318 /* Pods-AplhaVantageSwift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AplhaVantageSwift_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AplhaVantageSwift_Tests/Pods-AplhaVantageSwift_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A854AFC41E889F86DA21BF3E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		7DB17D632199FE79006AADFD /* AlphaVantageSwift-macOS */ = {
 			isa = PBXGroup;
 			children = (
+				7DB17DAC219A2ECB006AADFD /* AlphaVantageSwift-macOS.entitlements */,
 				7DB17D642199FE79006AADFD /* AppDelegate.swift */,
 				7DB17D662199FE79006AADFD /* ViewController.swift */,
 				7DB17D682199FE79006AADFD /* Assets.xcassets */,
@@ -224,6 +226,11 @@
 						CreatedOnToolsVersion = 10.1;
 						DevelopmentTeam = EC3AZW8X4Z;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -556,7 +563,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "AlphaVantageSwift-macOS/AlphaVantageSwift_macOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "AlphaVantageSwift-macOS/AlphaVantageSwift-macOS.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -589,7 +596,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "AlphaVantageSwift-macOS/AlphaVantageSwift_macOS.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "AlphaVantageSwift-macOS/AlphaVantageSwift-macOS.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;

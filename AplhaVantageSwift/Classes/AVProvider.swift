@@ -10,7 +10,7 @@ public final class AVProvider {
         UserDefaults.standard.set(apiKey, forKey: KeyNames.apiKey.rawValue)
     }
 
-    func currentApiKey() throws -> String {
+    static func currentApiKey() throws -> String {
         guard let currentAPIKey = UserDefaults.standard.string(forKey: KeyNames.apiKey.rawValue) else { throw AVError.missingApiKey }
         return currentAPIKey
     }
