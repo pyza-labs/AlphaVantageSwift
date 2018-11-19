@@ -36,45 +36,18 @@ extension ResponseType {
     }
 }
 
-public class Disposable {
-
-    typealias DisposeBlockType = () -> Void
-
-    private let disposeBlock: DisposeBlockType
-
-    init( _ disposeBlock: @escaping DisposeBlockType) {
-        self.disposeBlock = disposeBlock
-    }
-
-    fileprivate func dispose() {
-        disposeBlock()
-    }
-
-    public func disposed(by disposeBag: DisposeBag) {
-        disposeBag.addToDisposeBag(disposable: self)
-    }
-}
-
-public class DisposeBag {
-    private var disposables: [Disposable] = []
-
-    public init() {}
-
-    fileprivate func addToDisposeBag(disposable: Disposable) {
-        disposables.append(disposable)
-    }
-
-    deinit {
-        disposables.forEach { $0.dispose() }
-    }
-}
 
 class NetworkManager {
-    class func get<Response: ResponseType>(
+
+    static let shared = NetworkManager()
+
+    private init() {}
+
+    func get<Response: ResponseType>(
         params: [String: String],
         handler: @escaping (_ response: Response) -> Void
-        ) -> Disposable {
-        let task = URLSession.shared.dataTask(with: API.base.url(with: params)) { (data, urlResponse, error) in
+        ) -> Callable {
+        return URLSession.shared.dataTask(with: API.base.url(with: params)) { (data, urlResponse, error) in
             guard let data = data else {
                 let errorMessage = error?.localizedDescription ?? "Could not send the network request"
                 let response = Response.failure(rawResponse: urlResponse, message: errorMessage)
@@ -91,10 +64,6 @@ class NetworkManager {
                 let response = Response.failure(rawResponse: urlResponse, message: error.localizedDescription)
                 handler(response)
             }
-        }
-        task.resume()
-        return Disposable {
-            task.cancel()
         }
     }
 

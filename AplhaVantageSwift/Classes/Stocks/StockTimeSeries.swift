@@ -79,17 +79,28 @@ extension StockTimeSeries {
         symbol: String,
         outputSize: OutputSize = .compact,
         handler: @escaping (StocksResponse) -> Void
-        ) -> Disposable {
+        ) -> Callable {
         var params = self.params
         params["symbol"] = symbol
-        return NetworkManager.get(params: params, handler: handler)
+        return NetworkManager.shared.get(params: params, handler: handler)
     }
 
 }
 
 public struct StockData: Codable {
+
+    enum CodingKeys: String, CodingKey {
+        case metadata = "Meta Data"
+    }
+
     public var metadata: [String: String]
     public var timeSeries: [String: [String: String]]
+
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        metadata = try container.decode([String: String].self, forKey: .metadata)
+        timeSeries = [:]
+    }
 }
 
 public struct StocksResponse: ResponseType {

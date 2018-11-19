@@ -15,16 +15,18 @@ class ViewController: NSViewController {
 
     @IBOutlet weak var label: NSTextField!
 
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
 
         AVProvider.setup(with: "6VLV5FWRPWYEA67Z")
         StockTimeSeries.intraday(interval: .five).request(symbol: "MSFT") { [weak self] (response) in
-            self?.label.stringValue = "passed"
-        }.disposed(by: disposeBag)
-    
+            DispatchQueue.main.async {
+                self?.label.stringValue = "passed"
+            }
+            }
+            .call()
+            .disposed(by: disposeBag)
     }
 
     override var representedObject: Any? {
