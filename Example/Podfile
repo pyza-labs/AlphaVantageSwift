@@ -5,13 +5,13 @@ def development_pods
     pod 'AplhaVantageSwift', :path => '../'
 end
 
-target 'AplhaVantageSwift-iOS' do
+target 'AplhaVantageSwiftiOS' do
     platform :ios, 9.0
 
     development_pods
 end
 
-target 'AlphaVantageSwift-macOS' do
+target 'AlphaVantageSwiftmacOS' do
     platform :osx, 10.9
 
     development_pods
