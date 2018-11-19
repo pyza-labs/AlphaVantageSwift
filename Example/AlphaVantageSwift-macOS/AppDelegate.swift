@@ -7,7 +7,6 @@
 //
 
 import Cocoa
-import Pods_AlphaVantageSwift_macOS
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {

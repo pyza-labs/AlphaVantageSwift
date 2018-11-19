@@ -7,7 +7,7 @@
 //
 
 import Cocoa
-import Pods_AlphaVantageSwift_macOS
+import Pods_AlphaVantageSwiftmacOS
 
 class ViewController: NSViewController {
 

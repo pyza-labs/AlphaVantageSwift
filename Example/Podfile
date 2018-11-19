@@ -6,13 +6,13 @@ def development_pods
 end
 
 target 'AplhaVantageSwiftiOS' do
-    platform :ios, 9.0
+    platform :ios, 9.3
 
     development_pods
 end
 
 target 'AlphaVantageSwiftmacOS' do
-    platform :osx, 10.9
+    platform :osx, 10.10
 
     development_pods
 end
