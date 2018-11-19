@@ -14,24 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "AplhaVantageSwiftiOS.app"
-               BlueprintName = "AplhaVantageSwiftiOS"
-               ReferencedContainer = "container:AplhaVantageSwift.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "AplhaVantageSwift_Tests.xctest"
-               BlueprintName = "AplhaVantageSwift_Tests"
-               ReferencedContainer = "container:AplhaVantageSwift.xcodeproj">
+               BlueprintIdentifier = "7DB17D612199FE79006AADFD"
+               BuildableName = "AlphaVantageSwiftmacOS.app"
+               BlueprintName = "AlphaVantageSwiftmacOS"
+               ReferencedContainer = "container:AlphaVantageSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "607FACE41AFB9204008FA782"
-               BuildableName = "AplhaVantageSwift_Tests.xctest"
-               BlueprintName = "AplhaVantageSwift_Tests"
-               ReferencedContainer = "container:AplhaVantageSwift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AplhaVantageSwiftiOS.app"
-            BlueprintName = "AplhaVantageSwiftiOS"
-            ReferencedContainer = "container:AplhaVantageSwift.xcodeproj">
+            BlueprintIdentifier = "7DB17D612199FE79006AADFD"
+            BuildableName = "AlphaVantageSwiftmacOS.app"
+            BlueprintName = "AlphaVantageSwiftmacOS"
+            ReferencedContainer = "container:AlphaVantageSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -79,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AplhaVantageSwiftiOS.app"
-            BlueprintName = "AplhaVantageSwiftiOS"
-            ReferencedContainer = "container:AplhaVantageSwift.xcodeproj">
+            BlueprintIdentifier = "7DB17D612199FE79006AADFD"
+            BuildableName = "AlphaVantageSwiftmacOS.app"
+            BlueprintName = "AlphaVantageSwiftmacOS"
+            ReferencedContainer = "container:AlphaVantageSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -98,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "AplhaVantageSwiftiOS.app"
-            BlueprintName = "AplhaVantageSwiftiOS"
-            ReferencedContainer = "container:AplhaVantageSwift.xcodeproj">
+            BlueprintIdentifier = "7DB17D612199FE79006AADFD"
+            BuildableName = "AlphaVantageSwiftmacOS.app"
+            BlueprintName = "AlphaVantageSwiftmacOS"
+            ReferencedContainer = "container:AlphaVantageSwift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -7,10 +7,10 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'AplhaVantageSwift'
-  s.version          = '0.1.1'
+  s.name             = 'AlphaVantageSwift'
+  s.version          = '0.1.2'
   s.summary          = 'Swift wrappers for the famous Alpha Vantage API'
-  # s.platforms        = { :ios => 9.3, :osx => 10.10 }
+  s.platforms        = { :ios => 9.0, :osx => 10.9 }
   s.swift_version    = '4.1'
 
 # This description is used to generate tags and improve search results.
@@ -30,10 +30,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/pyza-labs/AlphaVantageSwift.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  # s.ios.deployment_target = '9.0'
-  # s.osx.deployment_target = '10.10'
+  s.ios.deployment_target = '9.0'
+  s.osx.deployment_target = '10.9'
 
-  s.source_files = 'AplhaVantageSwift/Classes/**/*'
+  s.source_files = 'AlphaVantageSwift/Classes/**/*'
   
   # s.resource_bundles = {
   #   'AplhaVantageSwift' => ['AplhaVantageSwift/Assets/*.png']

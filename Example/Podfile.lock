@@ -1,16 +1,16 @@
 PODS:
-  - AplhaVantageSwift (0.1.1)
+  - AlphaVantageSwift (0.1.1)
 
 DEPENDENCIES:
-  - AplhaVantageSwift (from `../`)
+  - AlphaVantageSwift (from `../`)
 
 EXTERNAL SOURCES:
-  AplhaVantageSwift:
+  AlphaVantageSwift:
     :path: "../"
 
 SPEC CHECKSUMS:
-  AplhaVantageSwift: 94380523b94d4b101ef277d33e6bdca41fd9524a
+  AlphaVantageSwift: 9ae6ef1ca2b9b13c7b89fda6e9fd96767e654053
 
-PODFILE CHECKSUM: 3efa8759463b720208882ed1a14d97f42a572534
+PODFILE CHECKSUM: 3df3ab062c908d823a2cc2c26f47c4482bd7c706
 
 COCOAPODS: 1.5.3
