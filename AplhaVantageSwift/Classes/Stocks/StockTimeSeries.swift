@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol Identifiable {
+    var keyName: String { get }
+}
+
 public enum StockTimeSeries {
     case intraday(interval: Interval)
     case daily
@@ -71,6 +75,7 @@ public enum StockTimeSeries {
         }
         return defaultParams
     }
+
 }
 
 extension StockTimeSeries {
@@ -82,24 +87,62 @@ extension StockTimeSeries {
         ) -> Callable {
         var params = self.params
         params["symbol"] = symbol
-        return NetworkManager.shared.get(params: params, handler: handler)
+        return NetworkManager.shared.get(params: params, identifier: self, handler: handler)
     }
 
 }
 
-public struct StockData: Codable {
+extension StockTimeSeries: Identifiable {
+    var keyName: String {
+        switch self {
+        case .daily, .dailyAdjusted: return "Time Series (Daily)"
+        case .weeklyAdjusted: return "Weekly Adjusted Time Series"
+        case .weekly: return "Weekly Time Series"
+        case .monthly: return "Monthly Time Series"
+        case .monthlyAdjusted: return "Monthly Adjust Time Series"
 
-    enum CodingKeys: String, CodingKey {
-        case metadata = "Meta Data"
+        case .intraday(let interval): return "Time Series (\(interval.stringValue))"
+        default: return ""
+        }
+    }
+}
+
+public struct StockData: RawInitializable {
+
+    public struct SeriesData {
+        public let volume: Double
+        public let low: Double
+        public let high: Double
+        public let close: Double
+        public let open: Double
+
+        init(dictionaryValue: [String: Double]) {
+            let dictionaryValue = dictionaryValue.mapKeys { $0.trimmingCharacters(in: CharacterSet(charactersIn: String($0.split(separator: " ").first!))).trimmingCharacters(in: .whitespacesAndNewlines) }
+            volume = dictionaryValue["volume"]!
+            low = dictionaryValue["low"]!
+            high = dictionaryValue["high"]!
+            close = dictionaryValue["close"]!
+            open = dictionaryValue["open"]!
+        }
     }
 
     public var metadata: [String: String]
-    public var timeSeries: [String: [String: String]]
+    public var timeSeries: [Date: SeriesData]
 
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        metadata = try container.decode([String: String].self, forKey: .metadata)
-        timeSeries = [:]
+    init(data: Data, identifier: Identifiable) throws {
+        let dictionaryValue = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+        guard let dictData = dictionaryValue as? [String: Any] else { throw AVError.parsingFailed(message: "Bad response") }
+
+        guard let metadata = dictData["Meta Data"] as? [String: String] else { throw AVError.parsingFailed(message: "Could not parse meta data")  }
+        self.metadata = metadata
+
+        guard let timeSeries = dictData[identifier.keyName] as? [String: [String: String]] else { throw AVError.parsingFailed(message: "Could not parse the time series") }
+        self.timeSeries = try timeSeries.reduce([:]) {
+            let date = try Date.fromTimeSeries($1.key)
+            var mutable = $0
+            mutable[date] = SeriesData(dictionaryValue: $1.value.mapValues { Double($0)! })
+            return mutable
+        }
     }
 }
 

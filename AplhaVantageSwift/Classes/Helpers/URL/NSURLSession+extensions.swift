@@ -12,9 +12,13 @@ public enum AVResult<T, U: Error> {
     case failure(U)
 }
 
+protocol RawInitializable {
+    init(data: Data, identifier: Identifiable) throws
+}
+
 protocol ResponseType {
 
-    associatedtype Response: Codable
+    associatedtype Response: RawInitializable
 
     var rawResponse: URLResponse? { get }
     var parsedResponse: AVResult<Response, AVError> { get }
@@ -45,6 +49,7 @@ class NetworkManager {
 
     func get<Response: ResponseType>(
         params: [String: String],
+        identifier: Identifiable,
         handler: @escaping (_ response: Response) -> Void
         ) -> Callable {
         return URLSession.shared.dataTask(with: API.base.url(with: params)) { (data, urlResponse, error) in
@@ -56,7 +61,7 @@ class NetworkManager {
             }
 
             do {
-                let parsedData = try JSONDecoder().decode(Response.Response.self, from: data)
+                let parsedData = try Response.Response.init(data: data, identifier: identifier)
                 let response = Response.success(rawResponse: urlResponse, parsedResponse: parsedData)
                 handler(response)
                 return

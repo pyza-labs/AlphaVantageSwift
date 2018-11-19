@@ -10,12 +10,14 @@ import Foundation
 public enum AVError: Error, CustomNSError {
     case missingApiKey
     case requestFailed(message: String?)
+    case parsingFailed(message: String?)
     case generalError(error: NSError)
 
     public var errorCode: Int {
         switch self {
         case .missingApiKey: return 1001
         case .requestFailed: return 1002
+        case .parsingFailed: return 1003
         case let .generalError(error): return error.code
         }
     }
@@ -24,6 +26,7 @@ public enum AVError: Error, CustomNSError {
         switch self {
         case .missingApiKey: return "API key is missing please initialize properly"
         case let .requestFailed(message): return message ?? "Request Failed"
+        case let .parsingFailed(message): return message ?? "Request Failed"
         case let .generalError(error): return error.localizedDescription
         }
     }
